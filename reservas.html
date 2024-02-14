@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitnessZone</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="author" content="Carlos Antonio Cortés Lora, Roberto Rivero Díaz">
+    <meta name="designer" content="Carlos Antonio Cortés Lora, Roberto Rivero Díaz">
+
+</head>
+<body>
+    <header>    
+        <nav>
+            <ul>
+
+                <li><a href="./index.html"><img src="./imagenes/logo_crudo.jpg" alt="logo" width="500" height="500"></a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+                <li><a href="./salas.html">Nuestras Salas</a></li>
+                <li><a href="./ubicacion.html">Ubicación</a></li>
+                <li><a href="#contacto">Contacta con Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form action="#" method="post">
+            <p>
+                <label>Nombre:</label>
+                <input type="text" name="nombre">
+            </p>
+            <p>
+                <label>Apellidos:</label>
+                <input type="text" name="apellidos">
+            </p>
+            <p>
+                <label>Seleccione el tipo de sala que desea reservar:</label>
+                <select name="SALAS">
+                    <option value="1">PILATES</option>
+                    <option value="2">TRX</option>
+                    <option value="3">YOGA</option>
+                </select>
+            </p>
+            <p>
+                <label>Numero de personas:</label>
+                <input type="int" name="Numero de personas">
+            </p>
+            <p>
+                <label>Fecha de la reserva:</label>
+                <input type="date" name="fecha">
+            </p>
+            <p>
+                <label>Eliga hora de Inicio y hora de Fin</label>
+                <input type="time" name="horaInicio">
+                <input type="time" name="horaFin">
+            </p>
+            <input type="submit" value="Enviar">              
+        </form>    
+    </section>
+
+    
+    <footer>
+        <div id="marca">
+            <img src="./imagenes/logo_crudo.jpg" alt="logo" width="500" height="500">
+        </div>
+        &copy;
+        
+        <div id="contacto">
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <a href="mailto:contacto@fitnesszone.com">contacto@fitnesszone.com</a>
+                <p>(+34)687 654 321</p>
+            </div>
+
+            <div class="contacto">
+                <h3>Siguenos</h3>
+                <p>Facebook</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

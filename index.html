@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitnessZone</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="author" content="Carlos Antonio Cortés Lora, Roberto Rivero Díaz">
+    <meta name="designer" content="Carlos Antonio Cortés Lora, Roberto Rivero Díaz">
+
+</head>
+<body>
+    <!-- Cabecera-->
+    <header>    
+        <nav>
+            <ul>
+
+                <li><a href="./index.html"><img src="./imagenes/logo_crudo.jpg" alt="logo" width="500" height="500"></a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+                <li><a href="./salas.html">Nuestras Salas</a></li>
+                <li><a href="./ubicacion.html">Ubicación</a></li>
+                <li><a href="#contacto">Contacta con Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Noticias-->
+    <aside>
+        <div class="row">
+            <div class="column" id="noticia1">
+                <p>Se ha reabierto la Sala de Pilates</p>
+                <img src="./imagenes/sala_pilates.jpg" alt="logo" width="500" height="300">
+            </div>
+            <div class="column" id="noticia2">
+                <p>Se ha creado la Sala de TRX</p>
+                <img src="./imagenes/sala_trx.jpg" alt="logo" width="500" height="300">
+            </div>
+            <div class="column" id="noticia3">
+                <p>Se ha cerrado la Sala de Yoga</p>
+                <img src="./imagenes/sala_yoga.jpg" alt="logo" width="500" height="300">
+            </div>
+        </div>
+    </aside>
+    <style>
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .column {
+            text-align: center;
+        }
+    
+        img {
+            max-width: 100%; 
+            height: auto;
+        }
+    </style>
+
+
+    <!-- Footer-->
+    <footer>
+        <div id="marca">
+            <img src="./imagenes/logo_crudo.jpg" alt="logo" width="500" height="500">
+        </div>
+        &copy;
+        
+        <div id="contacto">
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <a href="mailto:contacto@fitnesszone.com">contacto@fitnesszone.com</a>
+                <p>(+34)687 654 321</p>
+            </div>
+
+            <div class="contacto">
+                <h3>Siguenos</h3>
+                <p>Facebook</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

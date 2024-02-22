@@ -6,41 +6,86 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta name="author" content="Carlos Antonio Cortés Lora, Roberto Rivero Díaz">
     <meta name="designer" content="Carlos Antonio Cortés Lora, Roberto Rivero Díaz">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <!-- Cabecera-->
-    <header>    
+    <header>   
         <nav>
-            <ul>
-                <a href="./index.html"><img src="./imagenes/logo_crudo.jpg" alt="logo" width="500" height="500"></a>
-                <li><a href="./salas.html">Nuestras Salas</a></li>
-                <li><a href="./reservas.html">Reserva</a></li>
-                <li><a href="./ubicacion.html">Ubicación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            <a href="./index.html"><img src="./imagenes/logo_crudo.jpg" alt="logo" width="100" height="100"></a>
+            <a href="./salas.html">NUESTRAS SALAS</a>
+            <a href="./reservas.html" id="btnReserva">RESERVA</a>
+            <a href="./ubicacion.html">UBICACIÓN</a>
+            <a href="#contacto">CONTACTO</a>
         </nav>
     </header>
 
 
-    <!-- Noticias-->
-    <aside>
-        
-        <div  id="noticia1">
-            <p>¡Sala de Pilates ya disponible! Equipada con tecnología de última generación, esta sala ofrece una experiencia única para mejorar la fuerza y flexibilidad. Los usuarios podrán disfrutar de clases personalizadas y monitoreo en tiempo real para optimizar su rendimiento. ¡Descubre cómo llevamos el Pilates a un nivel superior!</p>
-            <img src="./imagenes/sala_pilates.jpg" alt="logo" width="500" height="300">
+</head>
+<body>
+
+
+    <div class="noticia visible">
+        <p>¡Sala de Pilates ya disponible! Equipada con tecnología de última generación, esta sala ofrece una experiencia única para mejorar la fuerza y flexibilidad. Los usuarios podrán disfrutar de clases personalizadas y monitoreo en tiempo real para optimizar su rendimiento. ¡Descubre cómo llevamos el Pilates a un nivel superior!</p>
+        <img src="./imagenes/sala_pilates.jpg" alt="logo" width="500" height="300">
+    </div>
+    <div class="noticia">
+        <p>¡FitnessZone incorpora TRX! Nuestra nueva sala dedicada al entrenamiento con suspensión ofrece sesiones dinámicas que desafían tu fuerza y estabilidad. Experimenta la innovación y versatilidad del TRX mientras trabajas cada grupo muscular. ¡Únete para un entrenamiento completo y efectivo!</p>
+        <img src="./imagenes/sala_trx.jpg" alt="logo" width="500" height="300">
+    </div>
+    <div class="noticia">
+        <p>Reabrimos la sala de Yoga. Disfruta de la paz mientras practicas asanas y meditación. Nuestra nueva área proporciona un ambiente tranquilo para armonizar cuerpo y mente. ¡Sumérgete en esta experiencia única de bienestar y renovación!</p>
+        <img src="./imagenes/sala_yoga.jpg" alt="logo" width="500" height="300">
+    </div>
+
+    <div id="content">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio-1">
+                <input type="radio" name="radio-btn" id="radio-2">
+                <input type="radio" name="radio-btn" id="radio-3">
+                <input type="radio" name="radio-btn" id="radio-4">
+
+                <div class="slide first">
+                    <img src="./imagenes/sala_pilates.jpg" alt="imagen de monigote en escritorio.">
+                </div>
+                <div class="slide">
+                    <img src="./imagenes/sala_trx.jpg" alt="imagen de una sala.">
+                </div>
+                <div class="slide">
+                    <img src="./imagenes/sala_yoga.jpg" alt="imagen de una sala con 2 personas.">
+                </div>
+                <div class="slide">
+                    <img src="./imagenes/sala_pilates.jp" alt="imagen de persona haciendo yoga.">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <div class="navigation-auto">
+                    <div class="auto-btn-1"></div>
+                    <div class="auto-btn-2"></div>
+                    <div class="auto-btn-3"></div>
+                    <div class="auto-btn-4"></div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio-1" class="manual-btn"></label>
+                    <label for="radio-2" class="manual-btn"></label>
+                    <label for="radio-3" class="manual-btn"></label>
+                    <label for="radio-4" class="manual-btn"></label>
+                </div>
+            </div>
         </div>
-        <div  id="noticia2">
-            <p> ¡FitnessZone incorpora TRX! Nuestra nueva sala dedicada al entrenamiento con suspensión ofrece sesiones dinámicas que desafían tu fuerza y estabilidad. Experimenta la innovación y versatilidad del TRX mientras trabajas cada grupo muscular. ¡Únete para un entrenamiento completo y efectivo!</p>
-            <img src="./imagenes/sala_trx.jpg" alt="logo" width="500" height="300">
-        </div>
-        <div id="noticia3">
-            <p>Reabrimos la sala de Yoga. Disfruta de la paz mientras practicas asanas y meditación. Nuestra nueva área proporciona un ambiente tranquilo para armonizar cuerpo y mente. ¡Sumérgete en esta experiencia única de bienestar y renovación!</p>
-            <img src="./imagenes/sala_yoga.jpg" alt="logo" width="500" height="300">
-        </div>
-        
-    </aside>
+    </div>
     
+
+
+
+
+</body>
+</html>
+
 
 
     <!-- Footer-->

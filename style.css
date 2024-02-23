@@ -4,65 +4,57 @@
 }
 
 /*Header*/
-header{
+header {
     position: fixed;
     width: 100%;
     height: 6em;
-    top:0%;
+    top: 0%;
 }
 
-nav{
-    position: fixed;
-    width: 100%;
-    height: 6em;
-    top:0%;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    overflow: hidden;
+nav {
     width: 100%;
     height: 6em;
     background-color: black;
+    position: relative; /* Cambiado a relative */
+    z-index: 1; /* Asegura que el nav esté por encima del resto del contenido */
 }
 
-nav ul li{
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 6em;
+}
+
+nav ul li {
     float: left;
 }
 
-nav ul li a{
+nav ul li a {
     padding: 1em;
     display: inline-block;
     font-size: 1.5em;
-    color:white;
+    color: white;
     font-weight: bolder;
     text-decoration: none;
     text-align: center;
 }
 
 /*Cuando se pasa el raton por encima*/
-nav ul li a:hover{
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-#alogo{
-    position: fixed;
-    text-align: left;
+.logoNav {
     margin: 0;
-}
-
-.logoNav{
-    position: fixed;
-    margin: 0;
+    padding: 0;
     text-align: left;
     width: 9.5em;
     height: 4em;
 }
 
-
-#btnReserva{
+#btnReserva {
     color: #FCB900;
     border: solid #FCB900;
     padding: 5px;

@@ -1,0 +1,43 @@
+
+#noticia1 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imagenes/h2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
+    margin-top:6em;
+}
+
+#noticia2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imagenes/h4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
+    
+}
+#noticia3 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imagenes/h1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
+    
+}
+        
+h1{
+    position: absolute; /* Establece posición absoluta para superponer el texto en el contenedor */
+    top: 50%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente y horizontalmente */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente del texto */
+    text-align: center; /* Alinea el texto al centro */
+}
+    

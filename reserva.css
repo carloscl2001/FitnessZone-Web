@@ -1,27 +1,59 @@
 #reserva{
     background-color: #D9D9D9;
-    border: solid 5px white;
-    border-radius: 10px;
-    width:75%;
+    width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8em;
+    margin-bottom: 2em;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0); /* Sombra: desplazamiento-x desplazamiento-y desenfoque color */
 }
+
 
 #titulo-reserva{
     background-color: black;
     color: white;
-    margin-top: 4em;
     text-align: center;
     font-size: 1.5em;
-    border-radius: 10px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+
 
 #formulario{
     color: black;
-    text-align: center;
-    column-count: 2;
+    text-align: left;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em; /* Relleno de 1em en la parte superior */
+    padding-bottom: 1em; /* Relleno de 1em en la parte inferior */
+    padding-left: 2em; /* Relleno de 3em en la parte izquierda */
+    padding-right: 2em;
 }
+
+.box{
+    width: 92%;
+}
+
 
 #btnReservaFormulario{
     background-color: black;
     color:#FCB900;
     text-align: center;
+    font-size: 1.5em;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
 }

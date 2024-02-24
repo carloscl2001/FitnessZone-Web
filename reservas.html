@@ -14,15 +14,16 @@
 </head>
 <body>
     <!-- Cabecera-->
-    <!-- Cabecera-->
     <header>   
         <nav>
             <ul>
-                <a href="./index.html" id="alogo" ><img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoNav"></a>
-                <a href="./salas.html">NUESTRAS SALAS</a>
-                <a href="./reservas.html" id="btnReserva">RESERVA</a>
-                <a href="./ubicacion.html">UBICACIÓN</a>
-                <a href="#contacto">CONTACTO</a>
+                <a href="./index.html">
+                    <img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoNav"></a>
+                
+                <li><a href="./salas.html">NUESTRAS SALAS</a></li>
+                <li><a href="./reservas.html" id="btnReserva">RESERVA</a></li>
+                <li><a href="./ubicacion.html">UBICACIÓN</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -55,34 +56,66 @@
                 <input type="date" name="fecha">
             </p>
             <p>
-                <label>Eliga hora de Inicio y hora de Fin</label>
-                <input type="time" name="horaInicio">
-                <input type="time" name="horaFin">
+                <label>Elige hora de Inicio y hora de Fin</label>
+                <select name="horaInicio" id="horaInicio" required></select>
+                <select name="horaFin" id="horaFin" required></select>
             </p>
             <input type="submit" value="Enviar">              
         </form>    
     </section>
 
+    <script>
+        function cargarHorasDisponibles() {
+            const horasDisponibles = generarHorasDisponibles();
+            
+            // Limpia las listas de horas
+            document.getElementById("horaInicio").innerHTML = horasDisponibles;
+            document.getElementById("horaFin").innerHTML = "";
+
+            // Agrega las horas disponibles a las listas
+            horasDisponibles.forEach(hora => {
+                const optionInicio = document.createElement("option");
+                optionInicio.text = hora;
+                optionInicio.value = hora;
+                document.getElementById("horaInicio").add(optionInicio);
+
+                const optionFin = document.createElement("option");
+                optionFin.text = hora;
+                optionFin.value = hora;
+                document.getElementById("horaFin").add(optionFin);
+            });
+        }
+
+        function generarHorasDisponibles() {
+            const horas = [];
+            for (let i = 9; i <= 21; i++) {
+                const horaFormato12 = (i % 12 === 0) ? 12 : i % 12;
+                const ampm = (i < 12 || i === 24) ? 'AM' : 'PM';
+                const hora = `${horaFormato12}:00 ${ampm}`;
+                horas.push(hora);
+            }
+            return horas;
+        }
+
+        function validarReserva() {
+            // Puedes implementar aquí la lógica de validación adicional si es necesario
+            return true;
+        }
+    </script>
+
     <!-- Footer-->
     <footer>
-        <div class="contacto">
-            <div class="alogo">
-                <img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoFooter">
-                &copy;
-            </div>
-            
-            <div class="info">
-                <h3>Contacto</h3>
-                <a href="mailto:contacto@fitnesszone.com">contacto@fitnesszone.com</a>
-                <p>(+34)687 654 321</p>
-            </div>
-    
-            <div class="info">
-                <h3>Siguenos</h3>
-                <p>Facebook</p>
-                <p>Twitter</p>
-            </div>
-        </div>
+        <img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoFooter">
+        &copy;
+        
+        <div id="contacto"></div>
+        <h3>Contacto</h3>
+        <a href="mailto:contacto@fitnesszone.com">contacto@fitnesszone.com</a>
+        <p>(+34)687 654 321</p>
+
+        <h3>Siguenos</h3>
+        <p>Facebook</p>
+        <p>Twitter</p>
     </footer>
 </body>
 </html>

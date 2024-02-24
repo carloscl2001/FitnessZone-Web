@@ -1,6 +1,5 @@
 *{
     font-family: Rubik;
-    
 }
 
 /*Header*/
@@ -57,6 +56,58 @@ nav ul li a:hover {
 #btnReserva{
     color: #FCB900;
     text-align: center;
+    border: 2px solid #FCB900; /* Establece el borde con el mismo color que el texto */
+    padding: 15px 15px; /* Ajusta el espaciado del botón según sea necesario */
+    border-radius: 15px; /* Opcional: agrega bordes redondeados */
+    margin-top: 0.65em;
+}
+
+
+
+/*COSAS DE ROBE*/
+
+body {
+    margin: 0;
+}
+
+#noticia1 {
+width: 100vw;
+    height: 100vh;
+    background-image: url('./imagenes/h2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
+}
+#noticia2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imagenes/h4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
+    
+}
+#noticia3 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imagenes/h1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
+    
+}
+    
+h1{
+    position: absolute; /* Establece posición absoluta para superponer el texto en el contenedor */
+    top: 50%; /* Alinea el texto en la mitad superior del contenedor */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto verticalmente y horizontalmente */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente del texto */
+    text-align: center; /* Alinea el texto al centro */
 }
 
 
@@ -81,51 +132,4 @@ footer{
 .info{
     padding: 0%;
 }
-
-/*COSAS DE ROBE*/
-
-body {
-    margin: 0;
-  }
-  
-    #noticia1 {
-        width: 100vw;
-        height: 100vh;
-        background-image: url('./imagenes/sala_pilates.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
-    }
-    #noticia2 {
-        width: 100vw;
-        height: 100vh;
-        background-image: url('./imagenes/sala_trx.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
-        
-    }
-    #noticia3 {
-        width: 100vw;
-        height: 100vh;
-        background-image: url('./imagenes/sala_yoga.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
-        
-    }
-  
-  h1 {
-    position: absolute; /* Establece posición absoluta para superponer el texto en el contenedor */
-    top: 50%; /* Alinea el texto en la mitad superior del contenedor */
-    left: 50%; /* Centra el texto horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el texto verticalmente y horizontalmente */
-    color: white; /* Color del texto */
-    font-size: 24px; /* Tamaño de fuente del texto */
-    text-align: center; /* Alinea el texto al centro */
-  }
-  
   

@@ -29,7 +29,7 @@
     </header>
 
     <section>
-        <h1>Reserva tu sala</h1>
+        <p>Reserva tu sala</p>
         <form action="#" method="post">
             <p>
                 <label>Nombre:</label>
@@ -63,45 +63,6 @@
             <input type="submit" value="Enviar">              
         </form>    
     </section>
-
-    <script>
-        function cargarHorasDisponibles() {
-            const horasDisponibles = generarHorasDisponibles();
-            
-            // Limpia las listas de horas
-            document.getElementById("horaInicio").innerHTML = horasDisponibles;
-            document.getElementById("horaFin").innerHTML = "";
-
-            // Agrega las horas disponibles a las listas
-            horasDisponibles.forEach(hora => {
-                const optionInicio = document.createElement("option");
-                optionInicio.text = hora;
-                optionInicio.value = hora;
-                document.getElementById("horaInicio").add(optionInicio);
-
-                const optionFin = document.createElement("option");
-                optionFin.text = hora;
-                optionFin.value = hora;
-                document.getElementById("horaFin").add(optionFin);
-            });
-        }
-
-        function generarHorasDisponibles() {
-            const horas = [];
-            for (let i = 9; i <= 21; i++) {
-                const horaFormato12 = (i % 12 === 0) ? 12 : i % 12;
-                const ampm = (i < 12 || i === 24) ? 'AM' : 'PM';
-                const hora = `${horaFormato12}:00 ${ampm}`;
-                horas.push(hora);
-            }
-            return horas;
-        }
-
-        function validarReserva() {
-            // Puedes implementar aquí la lógica de validación adicional si es necesario
-            return true;
-        }
-    </script>
 
     <!-- Footer-->
     <footer>

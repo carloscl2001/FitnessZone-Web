@@ -40,7 +40,6 @@
 
 #informacion-tres-columnas{
     column-count: 3;
-    padding-top: 2em;
     box-sizing: border-box; /* Incluye el padding y border en el ancho de la columna */
 }
 
@@ -54,9 +53,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 2em;
 }
 
 #conjunto-videos{
     column-count: 2;
+    box-sizing: border-box; /* Incluye el padding y border en el ancho de la columna */
 }

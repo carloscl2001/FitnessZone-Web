@@ -31,13 +31,35 @@
     
 }
         
-h1{
-    position: absolute; /* Establece posición absoluta para superponer el texto en el contenedor */
-    top: 50%; /* Alinea el texto en la mitad superior del contenedor */
-    left: 50%; /* Centra el texto horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el texto verticalmente y horizontalmente */
-    color: white; /* Color del texto */
-    font-size: 24px; /* Tamaño de fuente del texto */
-    text-align: center; /* Alinea el texto al centro */
+
+.not {
+    position: absolute;
+    text-align: left;
+    padding: 20px;
+    width: 40%;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta verticalmente */
+    background-color: rgba(0, 0, 0, 0.45); /* Negro con 10% de opacidad */
+    border-radius: 25px;
 }
-    
+.titnot{
+    color:#FCB900; /* Color del texto */
+    font-size: 32px; /* Ajusta el tamaño de la fuente según tus preferencias */   
+    justify-content: center;
+}
+
+
+.not1{
+    text-align: justify;
+    color: white;
+    font-size: 24px;
+}
+
+#not2{
+    position: absolute; /* Establece posición absoluta para superponer el texto en el contenedor */
+    color: white; /* Color del texto */
+    font-size: 24px;
+    text-align: right; 
+    padding: 20px;
+    width: 50%;
+}

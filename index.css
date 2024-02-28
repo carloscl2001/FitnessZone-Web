@@ -17,7 +17,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
+    position: relative; 
     
 }
 #noticia3 {
@@ -27,7 +27,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
+    position: relative; 
     
 }
         
@@ -37,9 +37,9 @@
     text-align: center;
     padding: 30px;
     width: 40%;
-    top: 50%; /* Centra verticalmente */
-    transform: translateY(-50%); /* Ajusta verticalmente */
-    background-color: rgba(0, 0, 0, 0.65); /* Negro con 10% de opacidad */
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.65); 
     border-radius: 25px;
 }
 
@@ -51,13 +51,13 @@
     right: 0; /* Pone el texto a la derecha*/
     top: 50%; /* Centra verticalmente */
     transform: translateY(-50%); /* Ajusta verticalmente */
-    background-color: rgba(0, 0, 0, 0.65); /* Negro con 10% de opacidad */
+    background-color: rgba(0, 0, 0, 0.65); 
     border-radius: 25px;
 }
 
 .titulo-noticia{
-    color:#FCB900; /* Color del texto */
-    font-size: 32px; /* Ajusta el tamaño de la fuente según tus preferencias */   
+    color:#FCB900; 
+    font-size: 32px; 
     padding: 10px;
 }
 
@@ -70,29 +70,29 @@
 
 
 
-/* Media query para móviles */
+/* Media query para otros dispositivos */
 @media only screen and (max-width: 768px) {
     #noticia1, #noticia2, #noticia3 {
         width: 100%;
     }
 
     .noticia-izq, #noticia-drch {
-        width: 90%; /* Hacer el texto más estrecho en pantallas más pequeñas */
-        font-size: 16px; /* Ajustar el tamaño de la fuente para móviles */
+        width: 90%; 
+        font-size: 16px; 
     }
 
     .titulo-noticia {
-        font-size: 24px; /* Ajustar el tamaño del título para móviles */
-        padding: 5px; /* Reducir el relleno del título para móviles */
+        font-size: 24px;
+        padding: 5px;
     }
 
     .texto-noticia{
-        font-size: 18px; /* Ajustar el tamaño del texto para móviles */
-        padding: 15px; /* Reducir el relleno del texto para móviles */
+        font-size: 18px; 
+        padding: 15px; 
     }
 
     #noticia-drch {
-        width: 90%; /* Hacer el contenedor más estrecho para móviles */
-        right: 5%; /* Ajustar la posición del contenedor en pantallas más pequeñas */
+        width: 90%;
+        right: 5%;
     }
 }

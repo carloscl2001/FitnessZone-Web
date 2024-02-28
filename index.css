@@ -70,7 +70,6 @@
 /* Media query para móviles */
 @media only screen and (max-width: 768px) {
     #noticia1, #noticia2, #noticia3 {
-        
         width: 100%;
     }
 

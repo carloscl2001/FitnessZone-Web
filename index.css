@@ -42,18 +42,6 @@
     background-color: rgba(0, 0, 0, 0.65); /* Negro con 10% de opacidad */
     border-radius: 25px;
 }
-.titnot{
-    color:#FCB900; /* Color del texto */
-    font-size: 32px; /* Ajusta el tamaño de la fuente según tus preferencias */   
-    padding: 10px;
-}
-
-
-.not1{
-    text-align: justify;
-    color: white;
-    font-size: 24px;
-}
 
 #noticia-drch{
     position: absolute;
@@ -67,28 +55,43 @@
     border-radius: 25px;
 }
 
+.titulo-noticia{
+    color:#FCB900; /* Color del texto */
+    font-size: 32px; /* Ajusta el tamaño de la fuente según tus preferencias */   
+    padding: 10px;
+}
+
+
+.texto-noticia{
+    text-align: justify;
+    color: white;
+    font-size: 24px;
+}
+
+
+
 /* Media query para móviles */
 @media only screen and (max-width: 768px) {
     #noticia1, #noticia2, #noticia3 {
         width: 100%;
     }
 
-    .not, #not2 {
+    .noticia-izq, #noticia-drch {
         width: 90%; /* Hacer el texto más estrecho en pantallas más pequeñas */
         font-size: 16px; /* Ajustar el tamaño de la fuente para móviles */
     }
 
-    .titnot {
+    .titulo-noticia {
         font-size: 24px; /* Ajustar el tamaño del título para móviles */
         padding: 5px; /* Reducir el relleno del título para móviles */
     }
 
-    .not1 {
+    .texto-noticia{
         font-size: 18px; /* Ajustar el tamaño del texto para móviles */
         padding: 15px; /* Reducir el relleno del texto para móviles */
     }
 
-    #not2 {
+    #noticia-drch {
         width: 90%; /* Hacer el contenedor más estrecho para móviles */
         right: 5%; /* Ajustar la posición del contenedor en pantallas más pequeñas */
     }

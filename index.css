@@ -2,7 +2,7 @@
 #noticia1 {
     width: 100vw;
     height: 100vh;
-    background-image: url('./imagenes/h2.png');
+    background-image: url('./imagenes/sala_pilates.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 #noticia2 {
     width: 100vw;
     height: 100vh;
-    background-image: url('./imagenes/h4.png');
+    background-image: url('./imagenes/sala_trx.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 #noticia3 {
     width: 100vw;
     height: 100vh;
-    background-image: url('./imagenes/h1.jpg');
+    background-image: url('./imagenes/sala_yoga.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,8 +34,8 @@
 
 .not {
     position: absolute;
-    text-align: left;
-    padding: 20px;
+    text-align: center;
+    padding: 30px;
     width: 40%;
     top: 50%; /* Centra verticalmente */
     transform: translateY(-50%); /* Ajusta verticalmente */
@@ -45,7 +45,7 @@
 .titnot{
     color:#FCB900; /* Color del texto */
     font-size: 32px; /* Ajusta el tamaño de la fuente según tus preferencias */   
-    justify-content: center;
+    padding: 10px;
 }
 
 
@@ -56,10 +56,53 @@
 }
 
 #not2{
-    position: absolute; /* Establece posición absoluta para superponer el texto en el contenedor */
-    color: white; /* Color del texto */
-    font-size: 24px;
-    text-align: right; 
-    padding: 20px;
-    width: 50%;
+    position: absolute;
+    text-align: center;
+    padding: 30px;
+    width: 40%;
+    right: 0; /* Pone el texto a la derecha*/
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta verticalmente */
+    background-color: rgba(0, 0, 0, 0.45); /* Negro con 10% de opacidad */
+    border-radius: 25px;
+}
+
+/* Media query para tablet */
+@media only screen and (max-width: 768px) {
+    .not, #not2 {
+        width: 80%; 
+        font-size: 20px; 
+    }
+
+    
+    /* Ajustar tamaño de contenedores para evitar el margen en blanco */
+    #noticia1, #noticia2, #noticia3 {
+        width: 100%; /* Ancho completo */
+    }
+}
+/* Media query para móviles */
+@media only screen and (max-width: 600px) {
+    #noticia1, #noticia2, #noticia3 {
+        height: 70vh; /* Reducir la altura para que quepa mejor en pantallas más pequeñas */
+    }
+
+    .not, #not2 {
+        width: 90%; /* Hacer el texto más estrecho en pantallas más pequeñas */
+        font-size: 16px; /* Ajustar el tamaño de la fuente para móviles */
+    }
+
+    .titnot {
+        font-size: 24px; /* Ajustar el tamaño del título para móviles */
+        padding: 5px; /* Reducir el relleno del título para móviles */
+    }
+
+    .not1 {
+        font-size: 18px; /* Ajustar el tamaño del texto para móviles */
+        padding: 15px; /* Reducir el relleno del texto para móviles */
+    }
+
+    #not2 {
+        width: 90%; /* Hacer el contenedor más estrecho para móviles */
+        right: 5%; /* Ajustar la posición del contenedor en pantallas más pequeñas */
+    }
 }

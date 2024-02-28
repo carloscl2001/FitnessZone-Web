@@ -58,3 +58,29 @@
     padding-bottom: 10px;
     font-weight: bolder;
 }
+/* Media query para móviles */
+@media only screen and (max-width: 600px) {
+    #caja-reserva {
+        width: 90%; /* Hacer el contenedor más estrecho para dispositivos móviles */
+        margin-top: 4em; /* Ajustar el margen superior en pantallas más pequeñas */
+        margin-bottom: 1em; /* Ajustar el margen inferior en pantallas más pequeñas */
+    }
+
+    #titulo-reserva {
+        font-size: 1.2em; /* Ajustar el tamaño del título para dispositivos móviles */
+    }
+
+    #formulario {
+        padding: 1em; /* Reducir el relleno para dispositivos móviles */
+    }
+
+    .box {
+        width: 100%; /* Ajustar el ancho del cuadro en dispositivos móviles */
+    }
+
+    #btnReservaFormulario {
+        font-size: 1.2em; /* Ajustar el tamaño de fuente del botón para dispositivos móviles */
+        padding-top: 8px; /* Ajustar el relleno superior del botón para dispositivos móviles */
+        padding-bottom: 8px; /* Ajustar el relleno inferior del botón para dispositivos móviles */
+    }
+}

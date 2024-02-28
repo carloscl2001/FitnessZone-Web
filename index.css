@@ -67,23 +67,11 @@
     border-radius: 25px;
 }
 
-/* Media query para tablet */
-@media only screen and (max-width: 768px) {
-    .not, #not2 {
-        width: 80%; 
-        font-size: 20px; 
-    }
-
-    
-    /* Ajustar tamaño de contenedores para evitar el margen en blanco */
-    #noticia1, #noticia2, #noticia3 {
-        width: 100%; /* Ancho completo */
-    }
-}
 /* Media query para móviles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #noticia1, #noticia2, #noticia3 {
-        height: 70vh; /* Reducir la altura para que quepa mejor en pantallas más pequeñas */
+        
+        width: 100%;
     }
 
     .not, #not2 {

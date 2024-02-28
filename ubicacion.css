@@ -39,15 +39,17 @@
 }
 
 .texto-informacion-transporte{
-    flex: 0 0 calc(33.333% - 20px); /* Establece el ancho de cada columna */
+    flex: 0 0 calc(33.333% - 80px); /* Establece el ancho de cada columna */
     text-align: justify;
-    padding: 10px;
+    margin: 50px auto;
+    margin-top: 0;
 
 }
 
 #texto-informacion-direccion {
     text-align: justify;
-    padding: 0 5em;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 

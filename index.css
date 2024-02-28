@@ -32,14 +32,14 @@
 }
         
 
-.not {
+.noticia-izq {
     position: absolute;
     text-align: center;
     padding: 30px;
     width: 40%;
     top: 50%; /* Centra verticalmente */
     transform: translateY(-50%); /* Ajusta verticalmente */
-    background-color: rgba(0, 0, 0, 0.45); /* Negro con 10% de opacidad */
+    background-color: rgba(0, 0, 0, 0.65); /* Negro con 10% de opacidad */
     border-radius: 25px;
 }
 .titnot{
@@ -55,7 +55,7 @@
     font-size: 24px;
 }
 
-#not2{
+#noticia-drch{
     position: absolute;
     text-align: center;
     padding: 30px;
@@ -63,7 +63,7 @@
     right: 0; /* Pone el texto a la derecha*/
     top: 50%; /* Centra verticalmente */
     transform: translateY(-50%); /* Ajusta verticalmente */
-    background-color: rgba(0, 0, 0, 0.45); /* Negro con 10% de opacidad */
+    background-color: rgba(0, 0, 0, 0.65); /* Negro con 10% de opacidad */
     border-radius: 25px;
 }
 

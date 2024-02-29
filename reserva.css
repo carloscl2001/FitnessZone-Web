@@ -40,7 +40,7 @@
 }
 
 .box{
-    width: 92%;
+    width: 90%;
 }
 
 
@@ -58,8 +58,8 @@
     padding-bottom: 10px;
     font-weight: bolder;
 }
-/* Media query para móviles */
-@media only screen and (max-width: 600px) {
+/* Media query*/
+@media only screen and (max-width: 768px) {
     #caja-reserva {
         width: 90%; /* Hacer el contenedor más estrecho para dispositivos móviles */
         margin-top: 4em; /* Ajustar el margen superior en pantallas más pequeñas */
@@ -75,7 +75,7 @@
     }
 
     .box {
-        width: 100%; /* Ajustar el ancho del cuadro en dispositivos móviles */
+        width: 90%; /* Ajustar el ancho del cuadro en dispositivos móviles */
     }
 
     #btnReservaFormulario {

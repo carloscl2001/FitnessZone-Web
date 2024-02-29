@@ -11,9 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reserva.css">
+    <script type="text/javascript" src="reserva.js"></script>
 
 </head>
 <body>
+
     <!-- Cabecera-->
     <header>   
         <nav>
@@ -22,7 +24,7 @@
                     <img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoNav"></a>
                 
                 <li><a href="./salas.html">NUESTRAS SALAS</a></li>
-                <li><a href="./reservas.html" id="btnReserva">RESERVA</a></li>
+                <li><a href="./reserva.html" id="btnReserva">RESERVA</a></li>
                 <li><a href="./ubicacion.html">CONÓCENOS</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
@@ -44,7 +46,7 @@
                 <br><br>
             
                 <label>Seleccione el tipo de sala que desea reservar</label><br>
-                <select name="SALAS">
+                <select id="SALAS">
                     <option value="1">Pilates</option>
                     <option value="2">Trx</option>
                     <option value="3">Yoga</option>
@@ -63,21 +65,7 @@
     
     
     
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var selectHoraInicio = document.getElementById('horaInicio');
-    
-            // Genera las opciones desde las 9 de la mañana hasta las 9 de la noche
-            for (var i = 9; i <= 21; i++) {
-                var hora = i < 10 ? '0' + i : '' + i;
-                var option = document.createElement('option');
-                option.value = hora + ':00';
-                option.text = hora + ':00';
-                selectHoraInicio.add(option);
-            }
-        });
-    </script>
+
     
     <!-- Footer-->
     <footer>

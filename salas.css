@@ -76,7 +76,10 @@ td{
 /* Media query para móviles */
 @media only screen and (max-width: 768px) {
     .contenedor {
-        margin-top: 8em; 
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 8em;
     }
 
     article {

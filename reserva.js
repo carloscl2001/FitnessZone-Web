@@ -10,13 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
         selectHoraInicio.add(option);
     }
 
-    alert('Hora puesta');
-    
+
     // Obtener el valor seleccionado de la sala
     let salaSeleccionada = document.getElementById('SALAS').value;
+    alert('salaSeleccionada');
+    
     // Obtener el número de personas ingresado
     let numeroPersonas = parseInt(salaSeleccionada);
+    alert('numeroPersonas');
     
+    /*
     // Definir los límites de personas según la sala seleccionada
     let limitePersonas;
     
@@ -46,5 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Enviar el formulario si pasa la validación
         //document.getElementById('formulario').submit();
     }
+    */
     
 });

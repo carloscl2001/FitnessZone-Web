@@ -34,31 +34,40 @@
     <div id="caja-reserva">
         <div id="titulo-reserva">Reserva tu Sala</div>
         <form action="#" method="post" id="formulario">
-            <p>
-                <label>Nombre</label><br>
+            <div class="grupo-atributo">
+                <label>Nombre</label>
                 <input type="text" name="nombre" class="box">
-                <br><br>
+            </div>
+
+            <div class="grupo-atributo">
                 <label>Apellidos</label><br>
                 <input type="text" name="apellidos" class="box">
-                <br><br>
-                <label>Número de personas</label><br>
-                <input type="number" name="Numero de personas" class="box">
-                <br><br>
-            
-                <label>Seleccione el tipo de sala que desea reservar</label><br>
-                <select id="SALAS">
+            </div>
+
+            <div class="grupo-atributo">
+                <label>Número de personas</label>
+                <input type="number" name="numero-personas" class="box">
+            </div>
+
+            <div class="grupo-atributo">
+                <label>Seleccione el tipo de sala que desea reservar</label>
+                <select id="SALAS" class="box">
+                    <option value="0">--Selecciona una sala--</option>
                     <option value="1">Pilates</option>
                     <option value="2">Trx</option>
                     <option value="3">Yoga</option>
                 </select>
-                <br>
-                <br>
-                <label>Fecha de la reserva</label><br>
-                <input type="date" name="fecha" ><br>
-                <br>
-                <label>Elige el tramo horario</label><br>
-                <select name="horaInicio" id="horaInicio" required ></select>
-            </p>
+            </div>
+
+            <div class="grupo-atributo">
+                <label>Fecha de la reserva</label>
+                <input type="date" name="fecha" class="box">
+            </div>
+    
+            <div class="grupo-atributo">
+                <label>Elige el tramo horario</label>
+                <select name="horaInicio" class="box" id="horaInicio"></select>
+            </div>
         </form> 
         <input type="submit" value="RESERVAR SALA" id="btnReservaFormulario">   
     </div>

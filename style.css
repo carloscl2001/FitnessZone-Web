@@ -8,7 +8,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 /*Header*/
@@ -101,13 +101,8 @@ footer{
 
 
 /* Media query para móviles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     footer {
         column-count: 1; /* Cambia a una sola columna */
-    }
-
-
-    nav ul{
-        column-count: 1;
     }
 }

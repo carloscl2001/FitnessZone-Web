@@ -69,10 +69,13 @@
 }
 
 
-
 /* Media query para otros dispositivos */
-@media only screen and (max-width: 768px) {
-    #noticia1, #noticia2, #noticia3 {
+@media only screen and (max-width: 900px) {
+    #noticia1{
+        margin-top: 30em;
+    }
+    
+    #noticia2, #noticia3 {
         width: 100%;
     }
 

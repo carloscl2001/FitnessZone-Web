@@ -79,12 +79,12 @@ td{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-top: 8em;
+        margin-top: 25em;
     }
 
     article {
         width: 90%; 
-        margin: 10px; 
+        margin: 50px; 
     }
 
     .titulo-sala {

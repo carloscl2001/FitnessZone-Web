@@ -30,8 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
             ocultarMensajeError("apellidos"); // Ocultar el mensaje de error si la validación pasa
         }
 
-        // Verificar si el número de personas supera la capacidad de la sala
-        if (parseInt(numeroPersonas) > obtenerCapacidadSala(salaSeleccionada)) {
+        // Verificar si el número de personas es válido y si supera la capacidad de la sala
+        if(parseInt(numeroPersonas) <= 0){
+            mostrarMensajeError("Número de personas no válido.", "numero-personas");
+            return false;
+        }
+        else if (parseInt(numeroPersonas) > obtenerCapacidadSala(salaSeleccionada)) {
             mostrarMensajeError("Se supera la capacidad de la sala seleccionada.", "numero-personas");
             return false;
         } else {
@@ -61,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return /^[a-zA-ZáéíóúÁÉÍÓÚ\s]+$/.test(cadena);
     }
 
-    // Función para mostrar mensaje de error
+    // Función para mostrar mensaje de error y cambiar el estilo del campo
     function mostrarMensajeError(mensaje, campo) {
         // Verificar si ya existe un mensaje de error para el campo
         if (!document.getElementById("error-" + campo)) {
@@ -72,14 +76,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let inputElement = document.querySelector('[name="' + campo + '"]');
             inputElement.parentNode.appendChild(errorElement);
+            
+            // Agregar una clase al campo para resaltarlo visualmente
+            inputElement.classList.add("error-input");
         }
     }
 
-    // Función para ocultar mensaje de error
+
+    // Función para ocultar mensaje de error y restaurar el estilo del campo
     function ocultarMensajeError(campo) {
         let errorElement = document.getElementById("error-" + campo);
         if (errorElement) {
             errorElement.remove();
+            // Remover la clase de error del campo
+            let inputElement = document.querySelector('[name="' + campo + '"]');
+            inputElement.classList.remove("error-input");
         }
     }
 

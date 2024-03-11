@@ -54,7 +54,6 @@ table{
     border-radius: 25px;
     margin: 0 auto; /* Esto centrará la tabla horizontalmente */
     width: 90%;
-    padding: auto;
 }
 
 th{
@@ -74,12 +73,12 @@ td{
 
 
 /* Media query para móviles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .contenedor {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-top: 25em;
+        margin-top: 15em;
     }
 
     article {

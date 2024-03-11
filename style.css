@@ -1,7 +1,6 @@
 /*Elementos comunes*/
 *{  
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-variation-settings:"slnt" 0;
@@ -35,24 +34,24 @@ nav ul {
     overflow: hidden;
     width: 100%;
     height: auto;
-    column-count: 5;
+    display: flex; /* Cambiado a flexbox */
+    justify-content: space-between; /* Alinea los elementos a lo largo del contenedor */
+    align-items: center;
 }
 
 nav ul li {
+    width: 20%; /* Cada elemento ocupa el 20% del ancho del nav */
     height: auto;
     text-align: center;
-
 }
 
 nav ul li a {
-    padding: 1.25em 1em 0 0;
-    display: inline-block;
+    padding: 1.25em 1em 0 0; /* Ajusta el espaciado del texto en los enlaces */
     font-size: 1.6em;
     color: white;
     font-weight: bolder;
     text-decoration: none;
     font-weight: 1000;
-    
 }
 /*Cuando se pasa el raton por encima*/
 nav ul li a:hover {
@@ -64,7 +63,7 @@ nav ul li a:hover {
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 14.5em;
+    width: 10em;
     height: auto;    
 }
 
@@ -114,7 +113,8 @@ a:hover{
 
 
 /*Media query para pantallas pequeñas*/
-@media only screen and (max-width: 900px) {
+/*Para el header*/
+@media only screen and (max-width: 1250px) {
     header {
         display: flex;
         justify-content: space-between; /* Alinea los elementos en los extremos del header */
@@ -152,10 +152,12 @@ a:hover{
 
     nav ul li a {
         padding: 0.2em 0; /* Ajusta el espaciado del texto en los enlaces */
-        font-weight: 1000;
+        font-weight: 800;
     }
+}
 
-
+/*Para el footer*/
+@media only screen and (max-width: 900px) {
     footer {
         column-count: 1; /* Cambia a una sola columna */
     }

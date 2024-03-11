@@ -28,14 +28,12 @@
 
 
 #formulario{
-    padding: 1em auto;
     color: black;
     width:100%;
     gap: 1.5em;
 }
 
 .grupo-atributo{
-    padding: 1em auto;
     margin: 1em;
 }
 

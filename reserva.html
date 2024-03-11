@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reserva.css">
     <script type="text/javascript" src="validacion-formulario.js"></script>
+    <script type="text/javascript" src="style.js"></script>
     
 
 </head>
@@ -21,8 +22,8 @@
         <nav>
             <ul>
                 <a href="./index.html">
-                    <img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoNav"></a>
-                
+                    <img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoNav">
+                </a>
                 <li><a href="./salas.html">SALAS</a></li>
                 <li><a href="./reserva.html" id="btnReserva">RESERVA</a></li>
                 <li><a href="./ubicacion.html">CONÓCENOS</a></li>
@@ -32,7 +33,8 @@
     </header>
 
    
-    <div id="caja-reserva">
+    <div id="caja-reserva" onclik="cambiologo()">
+        <div class="i1"> hola caraculo</div>
         <div id="titulo-reserva">Reserva tu Sala</div>
         <form action="#" method="post" id="formulario">
             <div class="grupo-atributo">

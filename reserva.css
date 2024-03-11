@@ -47,7 +47,7 @@
 
 #btnReservaFormulario{
     background-color: black;
-    color:#FCB900;
+    color:white;
     text-align: center;
     font-size: 1.5em;
     width:100%;
@@ -58,6 +58,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: bolder;
+}
+
+#btnReservaFormulario:hover{
+    color:#FCB900;
+    text-decoration: underline;
 }
 
 .error-input {

@@ -25,8 +25,6 @@
     padding-bottom: 10px;
 }
 
-
-
 #formulario{
     color: black;
     width:100%;
@@ -41,7 +39,6 @@
     width: 100%;
     height: 30px;
 }
-
 
 #btnReservaFormulario{
     background-color: black;
@@ -68,10 +65,10 @@
 }
 
 /* Media query*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1250px) {
     #caja-reserva {
         width: 90%; /* Hacer el contenedor más estrecho para dispositivos móviles */
-        margin-top: 25em; /* Ajustar el margen superior en pantallas más pequeñas */
+        margin-top: 20em; /* Ajustar el margen superior en pantallas más pequeñas */
         margin-bottom: 5em; /* Ajustar el margen inferior en pantallas más pequeñas */
     }
 
@@ -84,7 +81,7 @@
     }
 
     .box {
-        width: 90%; /* Ajustar el ancho del cuadro en dispositivos móviles */
+        width: 95%; /* Ajustar el ancho del cuadro en dispositivos móviles */
     }
 
     #btnReservaFormulario {

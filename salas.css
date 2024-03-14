@@ -73,7 +73,7 @@ td{
 
 
 /* Media query para móviles */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
     .contenedor {
         display: flex;
         justify-content: space-around;

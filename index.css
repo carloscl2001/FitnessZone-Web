@@ -70,7 +70,7 @@
 
 
 /* Media query para otros dispositivos */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
     #noticia1{
         margin-top: 30em;
     }

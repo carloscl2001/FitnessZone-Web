@@ -65,7 +65,7 @@
 }
 
 /* Media query*/
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 768px) {
     #caja-reserva {
         width: 90%; /* Hacer el contenedor más estrecho para dispositivos móviles */
         margin-top: 20em; /* Ajustar el margen superior en pantallas más pequeñas */

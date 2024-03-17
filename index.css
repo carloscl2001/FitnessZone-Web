@@ -1,13 +1,13 @@
-
+/* Estilo para la primera noticia */
 #noticia1 {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('./imagenes/sala_pilates.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative; /* Establece posición relativa para que puedas posicionar el texto de manera absoluta */
-    margin-top:6em;
+    width: 100vw; /* Ancho completo de la ventana del navegador */
+    height: 100vh; /* Altura completa de la ventana del navegador */
+    background-image: url('./imagenes/sala_pilates.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    position: relative; /* Establece posición relativa */
+    margin-top: 6em; /* Margen superior para separar la cabecera */
 }
 
 #noticia2 {
@@ -20,6 +20,7 @@
     position: relative; 
     
 }
+
 #noticia3 {
     width: 100vw;
     height: 100vh;
@@ -30,53 +31,53 @@
     position: relative; 
     
 }
-        
 
+/* Estilo para el contenedor de texto de la primera noticia */
 .noticia-izq {
-    position: absolute;
-    text-align: center;
-    padding: 30px;
-    width: 40%;
-    top: 50%; 
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.65); 
-    border-radius: 25px;
-}
-
-#noticia-drch{
-    position: absolute;
-    text-align: center;
-    padding: 30px;
-    width: 40%;
-    right: 0; /* Pone el texto a la derecha*/
-    top: 50%; /* Centra verticalmente */
+    position: absolute; /* Establece posición absoluta para que el texto se pueda posicionar dentro del contenedor */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 30px; /* Relleno interno */
+    width: 40%; 
+    top: 50%; /* Posiciona el contenedor en el centro verticalmente */
     transform: translateY(-50%); /* Ajusta verticalmente */
+    background-color: rgba(0, 0, 0, 0.65); /* Fondo semi-transparente */
+    border-radius: 25px; /* Bordes redondeados */
+}
+
+/* Estilo para el contenedor de texto de la segunda noticia */
+#noticia-drch {
+    position: absolute; 
+    text-align: center; 
+    padding: 30px;
+    width: 40%; 
+    right: 0; /* Pone el texto a la derecha */
+    top: 50%; 
+    transform: translateY(-50%); 
     background-color: rgba(0, 0, 0, 0.65); 
-    border-radius: 25px;
+    border-radius: 25px; 
 }
 
-.titulo-noticia{
-    color:#FCB900; 
-    font-size: 32px; 
-    padding: 10px;
+/* Estilos para el título y el texto de la noticia */
+.titulo-noticia {
+    color: #FCB900; /* Color del texto */
+    font-size: 32px; /* Tamaño de fuente */
+    padding: 10px; 
 }
 
-
-.texto-noticia{
-    text-align: justify;
-    color: white;
-    font-size: 24px;
+.texto-noticia {
+    text-align: justify; /* Alinea el texto justificado */
+    color: white; 
+    font-size: 24px; 
 }
 
-
-/* Media query para otros dispositivos */
+/* Media query para dispositivos con un ancho máximo de 768px */
 @media only screen and (max-width: 768px) {
-    #noticia1{
-        margin-top: 30em;
+    #noticia1 {
+        margin-top: 30em; 
     }
     
     #noticia2, #noticia3 {
-        width: 100%;
+        width: 100%; 
     }
 
     .noticia-izq, #noticia-drch {
@@ -85,17 +86,17 @@
     }
 
     .titulo-noticia {
-        font-size: 24px;
-        padding: 5px;
+        font-size: 24px; 
+        padding: 5px; 
     }
 
-    .texto-noticia{
+    .texto-noticia {
         font-size: 18px; 
         padding: 15px; 
     }
 
     #noticia-drch {
-        width: 90%;
-        right: 5%;
+        width: 90%; 
+        right: 5%; /* Posiciona el texto a la derecha */
     }
 }

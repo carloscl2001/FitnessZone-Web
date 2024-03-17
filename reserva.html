@@ -6,21 +6,26 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta name="author" content="Carlos Antonio Cortés Lora, Roberto Rivero Díaz">
     <meta name="designer" content="Carlos Antonio Cortés Lora, Roberto Rivero Díaz">
+    <!-- Conexión con la fuente de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente de texto -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Hojas de estilo -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reserva.css">
+    <!-- Scripts -->
     <script src="validacion-formulario.js"></script>
     <script src="style.js"></script>
-    
-
 </head>
 <body>
     <header>   
+        <!-- Barra de navegación -->
         <nav>
             <ul>
+                <!-- Logo -->
                 <li><a href="./index.html"><img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoNav"></a></li>
+                <!-- Enlaces de navegación -->
                 <li><a href="./salas.html">SALAS</a></li>
                 <li><a href="./reserva.html" id="btnReserva">RESERVA</a></li>
                 <li><a href="./ubicacion.html">CONÓCENOS</a></li>
@@ -29,10 +34,13 @@
         </nav>
     </header>
 
-   
+    <!-- Contenedor de reserva -->
     <div id="caja-reserva">
+        <!-- Título de la reserva -->
         <div id="titulo-reserva">Reserva tu Sala</div>
+        <!-- Formulario de reserva -->
         <form action="#" method="post" id="formulario">
+            <!-- Campos de entrada -->
             <div class="grupo-atributo">
                 <label>Nombre</label><br>
                 <input type="text" name="nombre" class="box">
@@ -68,23 +76,27 @@
                 <select name="horaInicio" class="box" id="horaInicio"></select>
             </div>
         </form> 
+        <!-- Botón de reserva -->
         <input type="submit" value="RESERVAR SALA" id="btnReservaFormulario">   
     </div>
-    
 
     <!-- Footer-->
     <footer>
+        <!-- Logo -->
         <a href="./index.html"><img src="./imagenes/logo_crudo.jpg" alt="logo" class="logoFooter"></a>
         &copy;
         
+        <!-- Información de contacto -->
         <div id="contacto"></div>
         <h3>Contacto</h3>
         <a href="mailto:contacto@fitnesszone.com">contacto@fitnesszone.com</a>
         <p>(+34)687 654 321</p>
 
+        <!-- Redes sociales -->
         <h3>Siguenos</h3>
         <p>Facebook</p>
         <p>Twitter</p>
     </footer>
 </body>
 </html>
+

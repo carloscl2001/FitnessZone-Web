@@ -94,8 +94,14 @@ footer{
     text-align: center;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 a:hover{
     color: #FCB900;
+    text-decoration: underline;
 }
 
 .logoFooter{

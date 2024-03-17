@@ -52,7 +52,7 @@ table{
     text-align: center;
     background-color: black;
     border-radius: 25px;
-    margin: 0 auto; /* Esto centrará la tabla horizontalmente */
+    margin: 0 auto; /* Esto centra la tabla horizontalmente */
     width: 90%;
 }
 
